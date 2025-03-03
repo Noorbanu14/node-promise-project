@@ -1,11 +1,7 @@
 const fs = require('fs').promises;
 
-const displayMessage = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("Hello, this is a Promise in Node.js!");
-        }, 2000);
-    });
+const displayMessage = async () => {
+    return "Hello, this is a Promise in Node.js!";
 };
 
 const createFile = async () => {
